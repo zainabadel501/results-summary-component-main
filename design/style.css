@@ -1,0 +1,198 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+  /* Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`. */
+:root {
+    /* Primary */
+    --Ligh-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    
+
+    /* background */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+
+    /* circle */
+    --Violet-blue : hsla(256, 72%, 46%, 1);
+    --Persian-blue : hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+   --White: hsl(0, 0%, 100%);
+   --Pale-blue: hsl(221, 100%, 96%);
+   --Light-lavender: hsl(241, 100%, 89%);
+   --Dark-gray-blue: hsl(224, 30%, 27%);
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--White);
+    color: #303b59;
+  }
+
+  .main_container{
+    
+    margin: 9.5rem auto;
+    background-color: var(--White);
+    /* height: auto; */
+    /* width: 45%; */
+    width: min(500px , 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 15px 25px var(--Pale-blue);
+    padding: 0;
+
+  }
+
+  .left_container{
+    /* background-color: var(--Light-slate-blue); */
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    text-align: center;
+    height:100%;
+
+  }
+  .left_container h1,h3 {
+    color: var(--White);
+  }
+
+  .left_container h6{
+    color: var(--Light-slate-blue);
+  }
+  .left_container h5,h4 {
+    color: var(--Light-lavender);
+  }
+
+  .left_container .para {
+    color: var(--Light-lavender);
+    padding: .5rem 0 .6rem  ;
+    width: 60%;
+  }
+  .circle {
+    text-align: center;
+    height:auto;
+    width:50%;
+    border-radius: 50% ;
+    background: linear-gradient( var(--Violet-blue),var(--Persian-blue));
+    margin: 1rem 0;
+  }
+
+  .score {
+    padding: 1.5rem;
+  }
+
+
+  .left_container,.main_container
+  {
+    border-radius: 20px;
+  }
+
+  .left_container,.right_container
+  {
+    width: 50%;
+    height: fit-content;
+    padding: 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .smallcon {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px ;
+    margin: .4rem 0;
+    padding: .4rem;
+    
+
+  }
+
+  .summ {
+    padding: 0 1.5rem ;
+    align-self: start;
+    color: #303b59;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+  .icon img {
+    height: auto;
+    width: 14px;
+  }
+
+  .smallcon h6{
+    padding: 5px;
+  }
+  .summrycon{
+    width: 80%;
+    margin: .5rem;
+    
+  }
+
+  .rate {
+    color: gray;
+  }
+
+  .button {
+    /* width: 100%; */
+    border-radius: 18px;
+    background-color: #303b59;
+    margin: 1rem 0 0;
+    padding: .4rem;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  .button:hover {
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+   
+  }
+
+  
+
+
+
+  @media only screen and (max-width: 444px) {
+    .main_container{
+    
+      margin: 0 auto;
+      background-color: var(--White);
+      /* height: auto; */
+      /* width: 45%; */
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 15px 15px 25px var(--Pale-blue);
+      padding: 0;
+      
+  
+    }
+
+    .left_container,.right_container
+    {
+      width: 97%;
+      
+      /* padding: 1.5rem 0 1.5rem; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .summrycon{
+      width: 86%; 
+    }
+  }
